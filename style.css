@@ -4,12 +4,57 @@
 nav ul {
   color: red;
   margin: 10px;
-  padding: 0px;
+  padding: 20px;
   list-style: none; }
 nav li {
   display: inline-block; }
 nav a {
   color: red;
   display: inline-block; }
+
+.section .section-1 {
+  background-color: DarkSlateBlue;
+  width: 150px;
+  height: 150px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 3px 3px 0px yellow;
+  margin: 0 0 30px 10px; }
+
+.section .section-2 {
+  background-color: DarkSeaGreen;
+  width: 400px;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: -3px -3px 3px purple;
+  margin: 0 0 30px 10px; }
+
+.section .section-3 {
+  background-color: HotPink;
+  width: 350px;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px red;
+  margin: 0 0 30px 10px; }
+
+.first, .second, .third {
+  background-color: skyblue;
+  padding: 10px;
+  width: 150px;
+  height: 150px;
+  margin: 0 0 15px 15px;
+  font-size: false; }
+
+.second {
+  background-color: red;
+  font-size: true; }
+
+.third {
+  background-color: yellow;
+  font-size: true; }
+
+.test {
+  font-size: 10px;
+  padding: 12px; }
 
 /*# sourceMappingURL=style.css.map */

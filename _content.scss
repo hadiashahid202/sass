@@ -1,8 +1,21 @@
+@mixin bd-radius($value){
+	border-radius: $value;
+}
+
+@mixin box-shadow($top, $left, $blur, $color){
+	box-shadow: $top $left $blur $color;
+}
+
+@mixin margin($mar){
+	margin: $mar;
+}
+
+
 nav {
 	ul {
 		color: $primary-color;
 		margin: 10px;
-		padding: 0px;
+		padding: 20px;
 		list-style: none;
 	}
 
@@ -12,4 +25,62 @@ nav {
 		color: $primary-color;
 		display: inline-block;
 	}
+}
+
+
+.section .section-1{
+	background-color: DarkSlateBlue;
+	width: 150px;
+	height: 150px;
+	padding: 10px;
+	@include bd-radius(5px);
+	@include box-shadow(3px, 3px, 0px, yellow);
+	@include margin(0 0 30px 10px);
+}
+
+.section .section-2{
+	background-color: DarkSeaGreen;
+	width: 400px;
+	padding: 10px;
+	@include bd-radius(20px);
+	@include box-shadow(-3px, -3px, 3px, purple);
+	@include margin(0 0 30px 10px);
+}
+
+.section .section-3{
+	background-color: HotPink;
+	width: 350px;
+	padding: 10px;
+	@include bd-radius(10px);
+	@include box-shadow(5px, 5px, 5px, red);
+	@include margin(0 0 30px 10px);
+}
+
+.first{
+	background-color: skyblue;
+	padding: 10px;
+	width: 150px;
+	height: 150px;
+	margin: 0 0 15px 15px;
+	font-size: 100px < 10px;
+}
+
+.second{
+	background-color: red;
+	@extend .first;
+	font-size: 10px == 10px and arial == "arial";
+}
+
+.third{
+	background-color: yellow;
+	@extend .first;
+	font-size: 10px == 10px;
+}
+
+$var: 10;
+$var1: 2;
+
+.test{
+	font-size: $var + px;
+	padding: $var + $var1 + px;
 }
