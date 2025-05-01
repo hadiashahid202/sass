@@ -77,6 +77,18 @@ nav {
 	font-size: 10px == 10px;
 }
 
+.fourth{
+	background-color: $base-color;
+	@extend .first;
+	font-size: 10px == 10px;
+}
+
+.fifth{
+	background-color: darken($base-color,70);
+	@extend .first;
+	font-size: 10px == 10px;
+}
+
 $var: 10;
 $var1: 2;
 

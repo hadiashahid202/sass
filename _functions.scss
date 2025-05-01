@@ -1,0 +1,23 @@
+@function half($width){
+	@return $width/2 + px;
+}
+
+@function onethird($width){
+	@return $width/3 + px;
+}
+
+@function onefourth($width){
+	@return $width/4 + px;
+}
+
+.half-width{
+	width: half($container-width);
+}
+
+.onethird-width{
+	width: onethird($container-width);
+}
+
+.onefourth-width{
+	width: onefourth($container-width);
+}

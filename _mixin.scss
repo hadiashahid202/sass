@@ -1,0 +1,7 @@
+@mixin margin($position, $unit){
+	margin-#{$position}: $unit + px;
+}
+
+.rest{
+	@include margin(left, 20);
+}
