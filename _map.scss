@@ -1,0 +1,27 @@
+.map{
+	font-weight: map-get($font-weight, "medium");
+}
+
+.keys{
+	font-weight: map-keys($font-weight);
+}
+
+.values{
+	font-weight: map-values($font-weight);
+}
+
+.merge{
+	font-weight: map-keys($merge);
+}
+
+.remove{
+	font-weight: map-keys($mr);
+}
+
+.has-key{
+	font-weight: map-has-key($font-weight, "bold");
+}
+
+.nth{
+	font-weight: nth($font-weight, 2);
+}

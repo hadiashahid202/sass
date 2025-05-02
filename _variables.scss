@@ -1,3 +1,18 @@
 $primary-color: red;
 $container-width: 1000;
 $base-color: pink;
+$list: 10px, 20px, 30px;
+$list1: 40px, 50px, 60px;
+$selector: selector-nest(".abc, .xyz", "li");
+$selector1: selector-append("a", ".active");
+$selector2: selector-replace("a.abc", ".abc", ".link");
+$selector3: selector-unify("a.active", "a.disable");
+$selector4: selector-extend("a.disable", "a.active", ".link");
+$selector5: simple-selectors("a.abc");
+$selector6: is-superselector("a", "a.active");
+$font-weight: ("regular": 400, "medium": 500, "bold": 700);
+$light-weight: ("lightest": 200, "lighter": 600);
+$merge: map-merge($font-weight, $light-weight);
+$mr: map-remove($font-weight, "regular");
+
+

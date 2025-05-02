@@ -5,3 +5,15 @@
 .string{
 	font-family:str-insert("arial"," mono", 3)
 }
+
+.list{
+	padding: length($list);
+	margin: nth($list, 2);
+	margin-left: set-nth($list, 2, 2em);
+	margin-right: join($list, $list1);
+	margin-top: append($list, 70px 80px, comma);
+	margin-bottom: zip($list, $list1);
+	padding-left: index($list, 20px);
+	padding-right: list-separator($list);
+	padding-top: is-bracketed($list);
+}
