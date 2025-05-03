@@ -1,0 +1,42 @@
+@mixin changeColor($value){
+	font-size: $value;
+	@if $value > 0 and $value <= 20 {
+		color: green;
+	}
+	@else if $value > 20 and $value <= 50{
+		color: blue;
+	}
+	@else{
+		color: red;
+	}
+	
+}
+
+.if-else{
+	@include changeColor(15)
+}
+
+@mixin box($value){
+	@if $value == darker{
+	background-color: black;
+	color: white;
+	}
+	@else if $value == lighter{
+	background-color: skyblue;
+	color: purple;
+	}
+}
+.six{
+	@include box(darker);
+	padding: 10px;
+    width: 150px;
+    height: 150px;
+    margin: 0 0 15px 15px;
+}
+.seven{
+	@include box(lighter);
+	padding: 10px;
+    width: 150px;
+    height: 150px;
+    margin: 0 0 15px 15px;
+}

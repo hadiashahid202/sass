@@ -136,6 +136,78 @@ true {
 .nth {
   font-weight: "medium" 500; }
 
+.interospection {
+  padding: true;
+  padding-left: true;
+  /*local variable is inside the class*/
+  padding-right: true;
+  padding-top: true;
+  padding-bottom: map;
+  margin: ("regular": 400, "medium": 500, "bold": 700, "lightest": 200, "lighter": 600); }
+
+body {
+  background-color: grey; }
+
+@media screen and (max-width: 1300px) {
+  body {
+    background-color: grey; } }
+@media screen and (max-width: 700px) {
+  body {
+    background-color: blue; } }
+@media screen and (max-width: 1000px) {
+  body {
+    background-color: green; } }
+.container {
+  width: 1100px;
+  margin: auto; }
+  @media screen and (max-width: 1300px) {
+    .container {
+      width: 700px; } }
+  @media screen and (max-width: 1300px) {
+    .container {
+      width: 900px; } }
+  @media screen and (max-width: 1300px) {
+    .container {
+      width: 1000px; } }
+
+.item {
+  color: red; }
+  .item-wrapper {
+    background-color: blue; }
+    .item-wrapper img {
+      background-color: green; }
+  .item .item-child {
+    color: yellow; }
+
+/*without media*/
+@media print {
+  .box {
+    color: red;
+    font-size: 20px; } }
+  .box {
+    color: blue;
+    font-size: 25px; }
+
+.if-else {
+  font-size: 15;
+  color: green; }
+
+.six {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  width: 150px;
+  height: 150px;
+  margin: 0 0 15px 15px; }
+
+.seven {
+  background-color: skyblue;
+  color: purple;
+  padding: 10px;
+  width: 150px;
+  height: 150px;
+  margin: 0 0 15px 15px; }
+
 /*
 ceil(4.2)>>5
 floor(3.4)>>3

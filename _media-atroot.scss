@@ -1,0 +1,44 @@
+.container{
+	width: 1100px;
+	margin: auto;
+
+	@media screen and (max-width: 1300px){
+		width: 700px;
+	}
+
+	@media screen and (max-width: 1300px){
+		width: 900px;
+	}
+
+	@media screen and (max-width: 1300px){
+		width: 1000px;
+	}
+
+}
+
+.item{
+	color: red;
+	@at-root{
+		.item-wrapper{
+			background-color: blue;
+			img{
+				background-color: green;
+			}
+		}
+	}
+	.item-child{
+		color: yellow;
+	}
+}
+
+/*without media*/
+@media print{
+	.box{
+		color: red;
+		font-size: 20px;
+		@at-root(without: media){
+			color: blue;
+			font-size: 25px;
+		}
+	}
+}

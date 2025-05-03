@@ -1,0 +1,12 @@
+@function add($a, $b){
+	@return $a + $b;
+}
+
+.interospection{
+	padding: variable-exists(base-color);
+	padding-left: global-variable-exists(mr); /*local variable is inside the class*/
+	padding-right: mixin-exists(margin);
+	padding-top: function-exists(add);
+	padding-bottom: type-of($merge);
+	margin: inspect($merge);
+}
