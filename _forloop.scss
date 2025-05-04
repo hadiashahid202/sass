@@ -1,0 +1,42 @@
+@for $i from 1 through 3{
+	.list-#{$i}{
+		width: 10px * $i;
+		background: darken($base-color, $i * 10%);
+	}
+}
+
+@each $l in $listing{
+	.#{$l}{
+		font-weight: $l;
+	}
+}
+
+/*Multidimensional listing*/
+
+@each $l in $listing{
+	.#{$l}{
+		font-weight: $l;
+	}
+}
+
+@each $name,$style,$size in $multi{
+	.#{$name}{
+		font-weight: $style;
+		font-size: $size;
+	}
+}
+
+/*While loop*/
+
+$x: 10;
+$f-size: 15;
+
+@while $x <=50 {
+	.padding-#{$x}{
+		padding-left: $x;
+		font-size: $f-size + px;
+	}
+	$x: $x + 10px;
+	$f-size: $f-size + 10;
+
+}

@@ -14,5 +14,7 @@ $font-weight: ("regular": 400, "medium": 500, "bold": 700);
 $light-weight: ("lightest": 200, "lighter": 600);
 $merge: map-merge($font-weight, $light-weight);
 $mr: map-remove($font-weight, "regular");
+$listing: (normal,bold,italic);
+$multi: ((normal,bold,10px),(emphasis,italic,20px));
 
 

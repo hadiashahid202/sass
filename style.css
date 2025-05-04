@@ -208,6 +208,66 @@ body {
   height: 150px;
   margin: 0 0 15px 15px; }
 
+.list-1 {
+  width: 10px;
+  background: #ff8da1; }
+
+.list-2 {
+  width: 20px;
+  background: #ff5a77; }
+
+.list-3 {
+  width: 30px;
+  background: #ff274d; }
+
+.normal {
+  font-weight: normal; }
+
+.bold {
+  font-weight: bold; }
+
+.italic {
+  font-weight: italic; }
+
+/*Multidimensional listing*/
+.normal {
+  font-weight: normal; }
+
+.bold {
+  font-weight: bold; }
+
+.italic {
+  font-weight: italic; }
+
+.normal {
+  font-weight: bold;
+  font-size: 10px; }
+
+.emphasis {
+  font-weight: italic;
+  font-size: 20px; }
+
+/*While loop*/
+.padding-10 {
+  padding-left: 10;
+  font-size: 15px; }
+
+.padding-20px {
+  padding-left: 20px;
+  font-size: 25px; }
+
+.padding-30px {
+  padding-left: 30px;
+  font-size: 35px; }
+
+.padding-40px {
+  padding-left: 40px;
+  font-size: 45px; }
+
+.padding-50px {
+  padding-left: 50px;
+  font-size: 55px; }
+
 /*
 ceil(4.2)>>5
 floor(3.4)>>3
